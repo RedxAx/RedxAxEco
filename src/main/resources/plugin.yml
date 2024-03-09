@@ -1,0 +1,7 @@
+name: RedxAxEco
+main: me.redxax.redxaxeco.RedxAxEco
+author: RedxAx
+version: 1.0
+commands:
+  reco:
+    description: Executes a command if the player's balance is greater than or equal to a certain value.
