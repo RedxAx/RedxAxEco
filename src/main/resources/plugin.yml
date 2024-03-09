@@ -5,3 +5,7 @@ version: 1.0
 commands:
   reco:
     description: Executes a command if the player's balance is greater than or equal to a certain value.
+permissions:
+    reco.use:
+        description: Allows the player to use the /reco command.
+        default: op

@@ -16,6 +16,10 @@ public class RecoCommand implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if (sender instanceof Player) {
             Player player = (Player) sender;
+            if (!player.hasPermission("reco.use")) {
+                player.sendMessage(ChatColor.DARK_RED + "You do not have permission to use this command.");
+                return true;
+            }
             if (args.length >= 3) {
                 String placeholder = args[0];
                 double value = Double.parseDouble(args[1]);
